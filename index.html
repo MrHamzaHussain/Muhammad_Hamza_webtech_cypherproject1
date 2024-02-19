@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptography</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h3 class="heading">Cryptography Web Application</h3>
+
+    <div class="whole-body">
+        <form>
+            <label class="plain" for="plainText">Plain Text Message:</label>
+            <input type="text" id="plainText" name="plainText" placeholder="Enter Text...">
+
+
+            <label class="plain" for="codingMechanism">Coding Mechanism</label>
+            <select id="codingMechanism" name="codingMechanism">
+                <option value="rot13">Rot13</option>
+                <option value="morsecode">Morse Code</option>
+            </select>
+
+            <input type="button" value="Encrypt Message" onclick="encryptMessage()">
+            <input type="button" value="Decrypt Message" onclick="decryptMessage()">
+            <label class="result" for="resultMessage">result Message:</label>
+            <input type="text" id="resultMessage" name="resultMessage">
+        </form>
+    </div>
+    <script src="myscripts.js"></script>
+</body>
+
+</html>
